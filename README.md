@@ -5,6 +5,7 @@ Repositório contendo diversos programas desenvolvidos em Java para aprendizado 
 
 ## 📂 Estrutura do Repositório
 Cada programa está organizado dentro de sua respectiva pasta. Alguns dos temas abordados incluem:
+- 📌 Jogo de cuidar de um Bichinho Virtual (Tamagotchi)
 - 📌 Estruturas de controle
 - 📌 Programação orientada a objetos (POO)
 - 📌 Manipulação de arquivos
