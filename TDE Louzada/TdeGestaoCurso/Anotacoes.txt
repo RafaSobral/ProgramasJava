@@ -1,0 +1,21 @@
+--Sistema de Gestão de Cursos Online--
+
+Este projeto propõe o desenvolvimento de uma aplicação em Java (modo console) para o gerenciamento de cursos online.
+A aplicação permitirá cadastrar, listar, buscar e excluir cursos, aulas e instrutores. O projeto deverá ser
+implementado com base nos princípios da Programação Orientada a Objetos, estruturado conforme o padrão MVC
+(Model-View-Controller) e com tratamento de exceções.
+
+Objetivos Técnicos
+- Aplicar o conceito de interface para definir um contrato comum de exibição de dados.
+- Utilizar uma classe abstrata para representar conteúdo ou pessoa genérica.
+- Criar subclasses específicas para diferentes entidades como Curso, Aula e Instrutor.
+- Demonstrar o uso de polimorfismo ao armazenar objetos em uma lista genérica.
+- Implementar tratamento de exceções com classes personalizadas.
+- Organizar o código com o padrão MVC.
+
+Funcionalidades da Aplicação
+- Cadastrar cursos com suas respectivas aulas e instrutores.
+- Listar todos os cursos cadastrados.
+- Buscar cursos por nome.
+- Remover cursos do sistema.
+- Tratar exceções como cursos não encontrados ou campos obrigatórios ausentes.
