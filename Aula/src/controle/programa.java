@@ -2,39 +2,40 @@ package controle;
 
 import java.util.Scanner;
 
-import modelo.Gerente;
-import modelo.Setor;
-
 public class programa {
-
+	
+	
+	// Metodo iterativo
+	public static int somarIterativo(int num) {
+		int soma = 0;
+				
+		for(int i = 1; i <= num; i++)
+			soma +=1;
+				
+		return soma;
+	}
+	
+	
+	
+	// Metodo recursivo
+	public static int somarRecursivo(int num) {
+		if(num < 0)
+			return 0;
+		
+		return num +  somarRecursivo(num - 1);
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Cadastro do setor");
-
-		System.out.println("Digite a sigla: ");
-		String sigla = input.nextLine();
-		System.out.println("Digite a descricao: ");
-		String descricao = input.nextLine();
+		System.out.print("Digite um numero: ");
+		int num = input.nextInt();
 		
-		
-		System.out.println("Cadastro do gerente");
-		
-		System.out.println("Digite o cpf: ");
-		String cpf = input.nextLine();
-		System.out.println("Digite o nome: ");
-		String nome = input.nextLine();
-		
-		Setor setor = new Setor(sigla, descricao);
-		Gerente gerente = new Gerente(cpf, nome);
-		
-		
-		setor.setGerente(gerente);
-		gerente.setSetor(setor);
-		
-		System.out.println("O funcionario" + setor.getGerente().getNome() + "é gerente do setor" + gerente.getSetor().getDescricao() );
-		
+		System.out.println("Soma iterativa: " + somarIterativo(num));
+		System.out.println("Soma iterativa: " + somarRecursivo(num));
 
 	}
-
+	
 }
